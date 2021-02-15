@@ -1,7 +1,7 @@
 package Programs;
 
 public class Problem_9 {                              //Status: Correct
-    //Refer mathblog.dk website's explanation for a better solution.
+                                                      //Refer mathblog.dk website's explanation for a better solution.
     public static void main(String args[]) {
         int a, b, c;
         int prod = 0;
@@ -11,7 +11,7 @@ public class Problem_9 {                              //Status: Correct
             b = 333 - (c - 334);
             a = 333;
 
-            for (; b > 0; b--, a++) {
+            for (; b > 0 && a<c ; b--, a++) {
                 if ((a * a) + (b * b) == (c * c)) {
                     prod = a * b * c;
                     flag = true;
